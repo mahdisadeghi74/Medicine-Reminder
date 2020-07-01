@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_flat_background"
+    android:backgroundTint="?attr/colorBasePage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/screenLargeInnerMargin"
+        android:paddingEnd="@dimen/screenLargeInnerMargin"
+        android:paddingTop="@dimen/screenNormalMargin"
+        android:paddingBottom="@dimen/screenNormalMargin"
+        android:minLines="1"
+        android:textStyle="bold"
+        tools:text="@string/drug_name"
+        android:textColor="?attr/colorDarkText"
+        android:id="@+id/tvName"/>
+</LinearLayout>

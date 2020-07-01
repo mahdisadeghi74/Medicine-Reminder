@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:id="@+id/clbSetting"
+    android:clickable="true"
+    android:elevation="100dp"
+    android:focusable="true"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imbCloseSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screenLargeMargin"
+                android:layout_marginEnd="@dimen/screenLargeMargin"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/screenLargeInnerMargin"
+                android:text="@string/setting"
+                android:textStyle="bold"
+                android:textColor="?attr/colorTextNormal"
+                android:textSize="@dimen/titleTextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/vLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/screenLargeMargin"
+                android:background="@color/colorDarkShadow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/vLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/screenNormalMargin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/normalTextSize"
+                    android:textColor="?attr/colorTextNormal"
+                    android:layout_marginTop="@dimen/screenNormalMargin"
+                    android:layout_marginBottom="@dimen/screenNormalMargin"
+                    android:drawableStart="@drawable/ic_theme"
+                    android:layout_marginStart="@dimen/screenNormalMargin"
+                    android:drawablePadding="@dimen/marginButtonWithDrawable"
+                    android:layout_marginEnd="@dimen/screenLargeInnerMargin"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/rgTheme">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorTextNormal"
+                        android:buttonTint="?attr/colorTextNormal"
+                        android:text="@string/default_mode"
+                        android:layout_marginStart="@dimen/screenLargeInnerMargin"
+                        android:layout_marginEnd="@dimen/screenLargeInnerMargin"
+                        android:paddingStart="@dimen/marginButtonWithDrawable"
+                        android:paddingEnd="@dimen/marginButtonWithDrawable"
+                        android:id="@+id/rbDefaultTheme"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorTextNormal"
+                        android:buttonTint="?attr/colorTextNormal"
+                        android:text="@string/dark_mode"
+                        android:layout_marginStart="@dimen/screenLargeInnerMargin"
+                        android:layout_marginEnd="@dimen/screenLargeInnerMargin"
+                        android:paddingStart="@dimen/marginButtonWithDrawable"
+                        android:paddingEnd="@dimen/marginButtonWithDrawable"
+                        android:id="@+id/rbDarkTheme"/>
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorTextNormal"
+                        android:buttonTint="?attr/colorTextNormal"
+                        android:text="@string/Light_mode"
+                        android:layout_marginStart="@dimen/screenLargeInnerMargin"
+                        android:layout_marginEnd="@dimen/screenLargeInnerMargin"
+                        android:paddingStart="@dimen/marginButtonWithDrawable"
+                        android:paddingEnd="@dimen/marginButtonWithDrawable"
+                        android:id="@+id/rbLightTheme"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/normalTextSize"
+                    android:textColor="?attr/colorTextNormal"
+                    android:layout_marginTop="@dimen/screenNormalMargin"
+                    android:layout_marginBottom="@dimen/screenNormalMargin"
+                    android:drawableStart="@drawable/ic_language"
+                    android:layout_marginStart="@dimen/screenNormalMargin"
+                    android:drawablePadding="@dimen/marginButtonWithDrawable"
+                    android:layout_marginEnd="@dimen/screenLargeInnerMargin"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/rgLanguage">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorTextNormal"
+                        android:buttonTint="?attr/colorTextNormal"
+                        android:text="@string/persian"
+                        android:gravity="left|center"
+                        android:layout_marginStart="@dimen/screenLargeInnerMargin"
+                        android:layout_marginEnd="@dimen/screenLargeInnerMargin"
+                        android:paddingStart="@dimen/marginButtonWithDrawable"
+                        android:paddingEnd="@dimen/marginButtonWithDrawable"
+                        android:id="@+id/rbPersian"
+                        android:checked="true"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorTextNormal"
+                        android:buttonTint="?attr/colorTextNormal"
+                        android:text="@string/english"
+                        android:layout_marginStart="@dimen/screenLargeInnerMargin"
+                        android:layout_marginEnd="@dimen/screenLargeInnerMargin"
+                        android:paddingStart="@dimen/marginButtonWithDrawable"
+                        android:paddingEnd="@dimen/marginButtonWithDrawable"
+                        android:id="@+id/rbEnglish" />
+
+
+
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ripple_flat_background"
+                    android:text="@string/rate_us"
+                    android:textAllCaps="false"
+                    android:gravity="start|center"
+                    android:paddingStart="@dimen/screenNormalMargin"
+                    android:paddingEnd="@dimen/screenNormalMargin"
+                    android:layout_marginTop="@dimen/screenNormalMargin"
+                    android:drawablePadding="@dimen/marginButtonWithDrawable"
+                    android:drawableStart="@drawable/ic_star"
+                    android:textColor="?attr/colorTextNormal"
+                    android:id="@+id/btnRateUs"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ripple_flat_background"
+                    android:text="@string/feedback"
+                    android:textAllCaps="false"
+                    android:gravity="start|center"
+                    android:layout_marginTop="@dimen/screenNormalMargin"
+                    android:paddingStart="@dimen/screenNormalMargin"
+                    android:paddingEnd="@dimen/screenNormalMargin"
+                    android:drawablePadding="@dimen/marginButtonWithDrawable"
+                    android:drawableStart="@drawable/ic_feedback"
+                    android:textColor="?attr/colorTextNormal"
+                    android:id="@+id/btnFeedback"/>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

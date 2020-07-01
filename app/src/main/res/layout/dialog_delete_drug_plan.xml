@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner"
+    android:padding="@dimen/screenNormalMargin">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="?attr/colorTextNormal"
+        android:text="@string/delete"
+        android:textSize="@dimen/normalTextSize"
+        android:id="@+id/tvContent"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvContent"
+        android:orientation="vertical"
+        android:id="@+id/rgDeleteDrugPlan">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/this_time"
+            android:textColor="?attr/colorTextNormal"
+            android:buttonTint="?attr/colorTextNormal"
+            android:id="@+id/rbThisTime"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/all_following_time"
+            android:textColor="?attr/colorTextNormal"
+            android:buttonTint="?attr/colorTextNormal"
+            android:id="@+id/rbAllFollowingTime"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/ok"
+        app:layout_constraintTop_toBottomOf="@+id/rgDeleteDrugPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnOk"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toTopOf="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@+id/btnOk"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk"
+        android:id="@+id/btnCancel"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

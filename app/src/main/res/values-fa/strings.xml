@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">یادآور دارو</string>
+    <string name="drug_name">نام دارو</string>
+    <string name="StartTime">ساعت شروع</string>
+    <string name="time_to_take">زمان مصرف دارو</string>
+    <string name="every_day">هر روز</string>
+    <string name="every_other_day">هر دو روز</string>
+    <string name="month_of_day">هر ماه</string>
+    <string name="total_number_drug">تعداد کل دارو ها</string>
+    <string name="number_of_reapetation">تعداد تکرار</string>
+    <string name="add_a_Medication_plan">افزودن برنامه دارویی</string>
+    <string name="more_options">تنظیمات بیشتر</string>
+    <string name="create_new_category">ایجاد دسته بندی جدید</string>
+    <string name="done">افزودن</string>
+    <string name="enter_category_title">عنوان دسته بندی را وارد کنید</string>
+    <string name="minute_before">چند دقیقه قبل</string>
+    <string name="smart_notification_description"><b>نوتیفیکیشن هوشمند</b>\nاین قسمت زمان مصرف دارو رو یادآوری میکنه</string>
+    <string name="smart_notification">نوتیفیکیشن هوشمند</string>
+    <string name="color">رنگ</string>
+    <string name="ok">ثبت</string>
+    <string name="cancel">لغو</string>
+    <string name="time_a_day">بار در روز</string>
+    <string name="are_you_sure">آیا مطمئن هستیید که میخواهید تغییرات لغو شود؟</string>
+    <string name="discard">حذف</string>
+    <string name="keep_edditing">اعمال</string>
+    <string name="edit">ویرایش</string>
+    <string name="delete">حذف</string>
+    <string name="took_it">مصرف شد</string>
+    <string name="is_on">فعال است</string>
+    <string name="is_off">غیرفعال است</string>
+    <string name="this_time">فقط این زمان</string>
+    <string name="all_following_time">این برنامه زمانی</string>
+    <string name="theme">تم</string>
+    <string name="language">زبان</string>
+    <string name="today">امروز</string>
+    <string name="tomorrow">فردا</string>
+    <string name="this_Week">این هفته</string>
+    <string name="this_Month">این ماه</string>
+    <string name="this_year">امسال</string>
+    <string name="rate_us">امتیاز به برنامه</string>
+    <string name="feedback">باز خورد</string>
+    <string name="today_empty_error">امروز هیچ برنامه دارویی ندارید.</string>
+<!--    month-->
+    <string name="aban">آبان</string>
+    <string name="azar">آذر</string>
+    <string name="bahman">بهمن</string>
+    <string name="dey">دی</string>
+    <string name="esfand">اسفند</string>
+    <string name="farvardin">فروردین</string>
+    <string name="khordad">خرداد</string>
+    <string name="mehr">مهر</string>
+    <string name="mordad">مرداد</string>
+    <string name="ordibehesht">اردیبهشت</string>
+    <string name="shahrivar">شهریور</string>
+    <string name="tir">تیر</string>
+
+
+
+<!--    week name-->
+    <string name="saturday">شنبه</string>
+    <string name="sunday">یکشنبه</string>
+    <string name="monday">دوشنبه</string>
+    <string name="tuesday">سه شنبه</string>
+    <string name="wednesday">چهارشنبه</string>
+    <string name="thursday">پنجشنبه</string>
+    <string name="friday">جمعه</string>
+    <string name="who_owns_drugs">دارو ها مال کیه؟</string>
+    <string name="add_category">افزودن لیست دارو</string>
+
+
+    <!-- colors -->
+    <string name="tomato_red">قرمز گوجه ای</string>
+    <string name="blueberry_blue">بلوبری</string>
+    <string name="black_berry">بلک بری</string>
+    <string name="strawberry">صورتی توتفرنگی</string>
+    <string name="mango_yellow">زرد انبه ای</string>
+    <string name="orange">نارنجی پرتقالی</string>
+    <string name="pomegranto_red">قرمز اناری</string>
+    <string name="oceanic_green">سبز اقیانوسی</string>
+    <string name="defult_blue">پیش فرض</string>
+    <string name="eggplant_puple">بنفش بادمجونی</string>
+    <string name="Eucalyptus_blue">آبی اوکالیپتوسی</string>
+
+    <!-- theme -->
+    <string name="dark_mode">حالت تاریک</string>
+    <string name="Light_mode">حالت روشن</string>
+    <string name="default_mode">حالت پیش فرض سیستم</string>
+
+    <string name="setting">تنظیمات</string>
+</resources>

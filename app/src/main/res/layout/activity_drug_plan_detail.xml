@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorMyPrimary"
+    tools:context=".ui.drugplan.activity.DrugPlanDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tlbPlanDetail"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tlbPlanDetail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screenLargeInnerMargin"
+                android:layout_marginTop="@dimen/screenLargeMargin"
+                android:layout_marginEnd="@dimen/screenLargeInnerMargin"
+                android:background="@null"
+                android:gravity="start|center"
+                tools:text="@string/drug_name"
+                android:textSize="@dimen/titleBigTextSize"
+                android:id="@+id/tvDrugName"
+                android:textColor="?attr/colorTextNormal"
+                android:transitionName="android"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/screenLargeInnerMargin"
+                android:layout_marginEnd="@dimen/screenLargeInnerMargin"
+                android:background="@null"
+                android:gravity="start|center"
+                tools:text="1398/08/25 - wednesday - 09:24"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="?attr/colorTextNormal"
+                android:id="@+id/tvDate"
+                android:transitionName="android1"/>
+
+            <TextView
+                android:id="@+id/tvTakeTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_flat_background"
+                android:drawableStart="@drawable/ic_access_time"
+                android:drawablePadding="@dimen/marginButtonWithDrawable"
+                android:gravity="start|center"
+                android:layout_marginTop="@dimen/screenLargeMargin"
+                android:paddingStart="@dimen/marginButtonWithDrawable"
+                android:paddingTop="@dimen/screenNormalMargin"
+                android:paddingEnd="@dimen/screenLargeInnerMargin"
+                android:textSize="@dimen/titleTextSize"
+                android:textColor="?attr/colorTextNormal"
+                android:textAllCaps="false"
+                tools:text="@string/every_day" />
+            <TextView
+                android:id="@+id/tvNumberDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_flat_background"
+                android:drawablePadding="@dimen/marginButtonWithDrawable"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingEnd="@dimen/screenLargeInnerMargin"
+                android:textSize="@dimen/normalTextSize"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorTextNormal"
+                tools:text="@string/time_a_day" />
+            <TextView
+                android:id="@+id/tvMinuteBefore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_flat_background"
+                android:drawableStart="@drawable/ic_notifications_none"
+                android:drawablePadding="@dimen/marginButtonWithDrawable"
+                android:gravity="start|center"
+                android:layout_marginTop="@dimen/screenLargeMargin"
+                android:paddingStart="@dimen/marginButtonWithDrawable"
+                android:paddingEnd="@dimen/screenLargeInnerMargin"
+                android:textSize="@dimen/titleTextSize"
+                android:textColor="?attr/colorTextNormal"
+                android:textAllCaps="false"
+                tools:text="@string/minute_before" />
+            <TextView
+                android:id="@+id/tvSmartNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_flat_background"
+                android:drawablePadding="@dimen/marginButtonWithDrawable"
+                android:gravity="start|center"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingEnd="@dimen/screenLargeInnerMargin"
+                android:textSize="@dimen/normalTextSize"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorTextNormal"
+                tools:text="smart notification is on" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/took_it"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/screenLargeMargin"
+                app:switchPadding="@dimen/screenNormalMargin"
+                android:id="@+id/swTookIt"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

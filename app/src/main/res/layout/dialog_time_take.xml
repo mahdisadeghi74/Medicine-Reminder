@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner"
+    android:padding="@dimen/screenNormalMargin">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:id="@+id/rgTimeTake">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/every_day"
+            android:button="@null"
+            android:background="@drawable/radio_flat_bg"
+            android:textColor="?attr/colorTextNormal"
+            android:padding="@dimen/screenNormalMargin"
+            android:id="@+id/rbEveryDay"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/every_other_day"
+            android:textColor="?attr/colorTextNormal"
+            android:button="@null"
+            android:background="@drawable/radio_flat_bg"
+            android:padding="@dimen/screenNormalMargin"
+            android:id="@+id/rbEveryOtherDay"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorTextNormal"
+            android:text="@string/month_of_day"
+            android:button="@null"
+            android:background="@drawable/radio_flat_bg"
+            android:padding="@dimen/screenNormalMargin"
+            android:id="@+id/rbMonthOfDay"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/ok"
+        app:layout_constraintTop_toBottomOf="@+id/rgTimeTake"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnOk"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toTopOf="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@+id/btnOk"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk"
+        android:id="@+id/btnCancel"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

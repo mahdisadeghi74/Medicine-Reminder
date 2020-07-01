@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="myColors">
+        <attr name="colorMyPrimary" format="color"/>
+        <attr name="colorMyPrimaryDark" format="color"/>
+        <attr name="colorMyAccent" format="color"/>
+        <attr name="colorLightText" format="color"/>
+        <attr name="colorDarkText" format="color"/>
+        <attr name="colorStyleAccent" format="color"/>
+        <attr name="colorBasePage" format="color"/>
+        <attr name="colorBasePageAccent" format="color"/>
+        <attr name="colorMinFloatActionButton" format="color"/>
+        <attr name="colorNormalAccent" format="color"/>
+        <attr name="colorTextNormal" format="color"/>
+        <attr name="colorHint" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="myStyles">
+        <attr name="floatActionBarStyle" format="reference"/>
+    </declare-styleable>
+</resources>

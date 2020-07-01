@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">drugReminder</string>
+    <string name="drug_name">Drug name</string>
+    <string name="StartTime">Start time</string>
+    <string name="time_to_take">Time to take</string>
+    <string name="every_day">Every day</string>
+    <string name="every_other_day">Every other day</string>
+    <string name="month_of_day">Month of day</string>
+    <string name="total_number_drug">Total number of drugs</string>
+    <string name="number_of_reapetation">Number of repetitions</string>
+    <string name="add_a_Medication_plan">Add a Medication plan</string>
+    <string name="more_options">More options</string>
+    <string name="create_new_category">Create new Category</string>
+    <string name="done">Done</string>
+    <string name="enter_category_title">Enter category title</string>
+    <string name="minute_before">Minutes Before</string>
+    <string name="smart_notification_description"><b>Smart Notification</b>\nyour session to help you remind</string>
+    <string name="smart_notification">Smart notification</string>
+    <string name="is_on">is on</string>
+    <string name="is_off">is off</string>
+    <string name="color">Color</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="time_a_day">times a day</string>
+    <string name="this_time">This time</string>
+    <string name="all_following_time">All following time</string>
+    <string name="theme">Theme</string>
+    <string name="language">Language</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="this_Week">This Week</string>
+    <string name="this_Month">This Month</string>
+    <string name="this_year">This Year</string>
+    <string name="rate_us">Rate us</string>
+    <string name="feedback">Feedback</string>
+    <string name="today_empty_error">You have no drug plan today</string>
+
+    <!--     month-->
+    <string name="farvardin">Farvardin</string>
+    <string name="ordibehesht">Ordibehesht</string>
+    <string name="khordad">Khordad</string>
+    <string name="tir">Tir</string>
+    <string name="mordad">Mordad</string>
+    <string name="shahrivar">Shahrivar</string>
+    <string name="mehr">Mehr</string>
+    <string name="aban">Aban</string>
+    <string name="azar">Azar</string>
+    <string name="dey">Dey</string>
+    <string name="bahman">Bahman</string>
+    <string name="esfand">Esfand</string>
+
+    <string name="who_owns_drugs">Who owns the drugs?</string>
+    <string name="add_category">Add new drug list</string>
+    <string name="are_you_sure">Are you sure that want to discard changes?</string>
+    <string name="discard">discard</string>
+    <string name="keep_edditing">Keep Editing</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+
+    <!--    week-->
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+
+
+    <!-- colors -->
+    <string name="tomato_red">Tomato red</string>
+    <string name="blueberry_blue">Blueberry</string>
+    <string name="black_berry">Blackberry</string>
+    <string name="strawberry">StrawBerry pink</string>
+    <string name="mango_yellow">Mango Yellow</string>
+    <string name="orange">Orange</string>
+    <string name="pomegranto_red">Pomegranate red</string>
+    <string name="oceanic_green">Oceanic green</string>
+    <string name="defult_blue">Default</string>
+    <string name="eggplant_puple">Eggplant purple</string>
+    <string name="Eucalyptus_blue">Eucalyptus blue</string>
+    <string name="took_it">Took it</string>
+
+
+    <!-- theme -->
+    <string name="dark_mode">Dark mode</string>
+    <string name="Light_mode">Light mode</string>
+    <string name="default_mode">Default mode</string>
+
+    <!-- language -->
+    <string name="english" translatable="false">English</string>
+    <string name="persian" translatable="false">فارسی</string>
+
+    <string name="setting">Setting</string>
+</resources>

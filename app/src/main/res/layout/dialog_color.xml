@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner"
+    android:orientation="vertical"
+    android:padding="@dimen/screenNormalMargin">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/nsv"
+        >
+
+        <RadioGroup
+            android:id="@+id/rgColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <RadioButton
+                android:id="@+id/rbBlackBerry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorBlackBerry"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/black_berry"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbEggplantPurple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorEggplantPurple"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/eggplant_puple"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbPomegranate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorPomegranateRedDark"
+                android:button="@null"
+                android:checked="true"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/pomegranto_red"
+                android:textColor="?attr/colorTextNormal"/>
+
+
+            <RadioButton
+                android:id="@+id/rbTomatoRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorTomatoRed"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/tomato_red"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbBlueBerry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorBlueBerry"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/blueberry_blue"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbEucalyptusBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorEucalyptusBlue"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/Eucalyptus_blue"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbOceanicGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorOceanicGreen"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/oceanic_green"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbMangoYellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorMangoColor"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/mango_yellow"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbStrawBerryPink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorStrawberryPink"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/strawberry"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbOrange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorOrangeFruit"
+                android:button="@null"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/orange"
+                android:textColor="?attr/colorTextNormal"/>
+
+            <RadioButton
+                android:id="@+id/rbDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_button_color"
+                android:backgroundTint="@color/colorTwitterBlue"
+                android:button="@null"
+                android:checked="true"
+                android:paddingStart="@dimen/screenLargeInnerMargin"
+                android:paddingTop="@dimen/screenSmallMargin"
+                android:paddingBottom="@dimen/screenSmallMargin"
+                android:text="@string/defult_blue"
+                android:textColor="?attr/colorTextNormal"/>
+
+        </RadioGroup>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nsv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnOk"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toTopOf="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@+id/btnOk"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk"
+        android:id="@+id/btnCancel"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

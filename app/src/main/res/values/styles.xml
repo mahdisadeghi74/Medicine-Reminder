@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+        <item name="buttonStyle">?attr/borderlessButtonStyle</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryBlack</item>
+        <item name="android:colorControlActivated">@color/colorPrimaryBlack</item>
+        <item name="android:colorControlNormal">@color/colorPrimaryBlack</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryGray</item>
+        <item name="colorSecondary">@color/colorPrimaryGray</item>
+        <item name="popupTheme">@style/PopupThemeLight</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="floatActionBarStyle">@style/FloatActionButtonThemeLight</item>
+        <!-- attr styles -->
+        <item name="colorMyPrimary">@color/colorPrimary</item>
+        <item name="colorMyPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorMyAccent">@color/colorAccent</item>
+        <item name="colorLightText">@color/colorPrimaryGray</item>
+        <item name="colorDarkText">@color/colorPrimaryBlack</item>
+        <item name="colorStyleAccent">@color/colorPrimaryBlack</item>
+        <item name="colorBasePage">@color/colorDuckEggLight</item>
+        <item name="colorBasePageAccent">@color/colorDuckEggDark</item>
+        <item name="android:navigationBarColor">?attr/colorStyleAccent</item>
+        <item name="colorNormalAccent">@color/colorNormalAccent</item>
+        <item name="colorTextNormal">@color/colorLightBlack</item>
+        <item name="colorHint">@color/colorDarkGray</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+        <item name="buttonStyle">?attr/borderlessButtonStyle</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryGray</item>
+        <item name="android:colorControlActivated">@color/colorPrimaryBlack</item>
+        <item name="android:colorControlNormal">@color/colorPrimaryBlack</item>
+        <item name="android:textColorSecondary">@color/colorPrimaryGray</item>
+        <item name="colorSecondary">@color/colorPrimaryGray</item>
+        <item name="popupTheme">@style/PopupThemeDark</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="floatActionBarStyle">@style/FloatActionButtonThemeDark</item>
+        <!-- attr styles -->
+        <item name="colorMyPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorMyPrimaryDark">@color/colorPrimaryBlack</item>
+        <item name="colorMyAccent">@color/colorAccent</item>
+        <item name="colorLightText">@color/colorPrimaryBlack</item>
+        <item name="colorDarkText">@color/colorPrimaryGray</item>
+        <item name="colorStyleAccent">@color/colorPrimaryGray</item>
+        <item name="colorBasePage">@color/colorDuckEggDark</item>
+        <item name="colorBasePageAccent">@color/colorDuckEggDark</item>
+        <item name="android:navigationBarColor">?attr/colorStyleAccent</item>
+        <item name="colorNormalAccent">@color/colorNormalAccent</item>
+        <item name="colorTextNormal">@color/colorPrimaryGray</item>
+        <item name="colorHint">@color/colorDarkGray</item>
+
+    </style>
+
+    <style name="PopupThemeDark" parent="AppThemeDark">
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:textColor">@color/colorSoftWhite</item>
+        <item name="android:textColorPrimary">@color/colorSoftBlack</item>
+        <item name="android:textColorSecondary">@color/colorSoftBlack</item>
+        <item name="android:textColorTertiary">@color/colorSoftBlack</item>
+    </style>
+
+    <style name="PopupThemeLight" parent="AppTheme">
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:textColor">@color/colorSoftWhite</item>
+        <item name="android:textColorPrimary">@color/colorSoftWhite</item>
+        <item name="android:textColorSecondary">@color/colorSoftWhite</item>
+        <item name="android:textColorTertiary">@color/colorSoftWhite</item>
+    </style>
+    <style name="OverFlowDark" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert</item>
+    </style>
+    <style name="OverFlow" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:src">@drawable/ic_more_vert</item>
+    </style>
+    <style name="AppBaseThemeLight" parent="AppTheme">
+        <item name="colorPrimaryDark">?attr/colorBasePage</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppBaseThemeDark" parent="AppThemeDark">
+        <item name="colorPrimaryDark">?attr/colorBasePage</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="FloatActionButtonThemeLight" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+    </style>
+
+    <style name="FloatActionButtonThemeDark" parent="AppThemeDark">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryBlack</item>
+        <item name="colorAccent">@color/colorPrimaryBlack</item>
+        <item name="android:textColor">@color/colorPrimaryGray</item>
+    </style>
+    <style name="FloatActionButtonMinTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorMangoColor</item>
+        <item name="android:textColor">@color/colorPrimaryBlack</item>
+    </style>
+
+    <style name="dialog" parent="AppTheme">
+
+    </style>
+    <style name="ThemeDialog" parent="android:Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowBackground">@drawable/bg_corner</item>
+        <item name="colorAccent">?attr/colorTextNormal</item>
+        <item name="colorPrimary">?attr/colorTextNormal</item>
+        <item name="android:colorPrimaryDark">?attr/colorTextNormal</item>
+        <item name="android:colorControlNormal">?attr/colorTextNormal</item>
+        <item name="android:textColorPrimary">?attr/colorTextNormal</item>
+        <item name="android:colorControlActivated">?attr/colorTextNormal</item>
+    </style>
+</resources>

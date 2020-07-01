@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <ripple android:color="@color/colorDarkShadow">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="?attr/colorMyPrimary" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+
+    <item android:state_checked="true">
+        <ripple android:color="?attr/colorMyPrimary">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/colorDarkShadow" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+
+    <item android:state_checked="false">
+        <ripple android:color="?attr/colorMyPrimary">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="?attr/colorMyPrimary"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</selector>

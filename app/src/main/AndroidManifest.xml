@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.jetpack.DrugReminder">
+
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name="com.project.jetpack.DrugReminder.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.project.jetpack.DrugReminder.ui.drugplan.activity.EditDrugPlanActivity"
+            android:configChanges="uiMode"/>
+        <activity android:name="com.project.jetpack.DrugReminder.ui.drugplan.activity.DrugPlanDetailActivity"
+            android:configChanges="uiMode"/>
+        <activity android:name="com.project.jetpack.DrugReminder.ui.drug.MoreOptionsActivity"
+            android:configChanges="uiMode"/>
+        <activity android:name="com.project.jetpack.DrugReminder.ui.category.activity.AddCategoryActivity"
+            android:configChanges="uiMode"/>
+        <activity
+            android:name="com.project.jetpack.DrugReminder.ui.drugplan.activity.AddDrugPlanActivity"
+            android:configChanges="uiMode" />
+        <activity android:name=".ui.drugplan.activity.DrugPlanListActivity"
+            android:configChanges="uiMode" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.project.jetpack.DrugReminder.notification.NotificationService"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="your.app.domain.NotificationService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.project.jetpack.DrugReminder.notification.Restarter"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="restartservice" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

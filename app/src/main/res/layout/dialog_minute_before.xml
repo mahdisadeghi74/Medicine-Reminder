@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner"
+    android:padding="@dimen/screenNormalMargin">
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:id="@+id/npMinuteBefore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/ok"
+        app:layout_constraintTop_toBottomOf="@+id/npMinuteBefore"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnOk"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toTopOf="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@+id/btnOk"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk"
+        android:id="@+id/btnCancel"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorPrimaryDark">#FAFAFA</color>
+    <color name="colorAccent">#4f86f7</color>
+    <color name="colorDarkBlack">#000000</color>
+    <color name="colorLightBlack">#484848</color>
+    <color name="colorPrimaryBlack">#212121</color>
+    <color name="colorDarkGray">#c7c7c7</color>
+    <color name="colorLightGray">#ffffff</color>
+    <color name="colorPrimaryGray">#fafafa</color>
+    <color name="colorDuckEggLight">#e4f7e6</color>
+    <color name="colorDuckEggDark">#80A896</color>
+
+    <color name="colorDarkShadow">#14000000</color>
+    <color name="colorNormalAccent">#414F86F7</color>
+
+    <color name="colorPomegranateRedLight">#c35550</color>
+    <color name="colorOceanicGreen">#4ca973</color>
+    <color name="colorPomegranateRedDark">#660c21</color>
+    <color name="colorBlueBerry">#4f86f7</color>
+    <color name="colorMangoColor">#ffc75d</color>
+    <color name="colorEggplantPurple">#614051</color>
+    <color name="colorOrangeFruit">#ffa500</color>
+    <color name="colorGreen">#619237</color>
+    <color name="colorStrawberryPink">#fc5a8d</color>
+    <color name="colorTwitterBlue">#1DA1F2</color>
+    <color name="colorBlackBerry">#4a4354</color>
+    <color name="colorTomatoRed">#ff6347</color>
+    <color name="colorEucalyptusBlue">#84bcb9</color>
+    <color name="colorSoftWhite">#fafafa</color>
+    <color name="colorSoftBlack">#212121</color>
+</resources>

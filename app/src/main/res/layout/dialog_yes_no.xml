@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:Tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner"
+    android:padding="@dimen/screenNormalMargin">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        Tools:text="Are You Shur?"
+        android:id="@+id/tvContent"
+        android:textColor="?attr/colorTextNormal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/normalTextSize"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/ok"
+        app:layout_constraintTop_toBottomOf="@+id/tvContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnYes"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_flat_background"
+        android:textColor="?attr/colorMyAccent"
+        android:text="@string/cancel"
+        app:layout_constraintTop_toTopOf="@+id/btnYes"
+        app:layout_constraintTop_toBottomOf="@+id/btnYes"
+        app:layout_constraintEnd_toStartOf="@+id/btnYes"
+        android:id="@+id/btnNo"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
